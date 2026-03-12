@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<h1>Student Management System</h1>
+
+<div class="container">
+    <h2>Add Student</h2>
+    
+    <form id="studentForm">
+        <label>Name:</label>
+        <input type="text" id="name" required><br>
+        
+        <label>Email:</label>
+        <input type="email" id="email" required><br>
+        
+        <label>Gr. ID:</label>
+        <input type="number" id="grid" required><br>
+        
+        <label>Course:</label>
+        <select id="course" required>
+            <option value="">Choose Course</option>
+            <option value="FSD">FSD</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="AI/ML">AI/ML</option>
+        </select><br>
+        
+        <button id="addBtn" type="submit">Add Student</button>
+    </form>
+
+    <h2>Student List</h2>
+    
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gr. ID</th>
+            <th>Course</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <p>Total Students: <span id="total">0</span></p>
+    <p id="emptyMsg" style="color: red; font-weight: bold;">No students added yet...</p>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
